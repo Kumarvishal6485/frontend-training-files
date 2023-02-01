@@ -1,84 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Nature</title>
-    <!-- implementing external css -->
-    <!-- <link rel="stylesheet" href="ind.css"> -->
-    <!-- implementing internal css -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        *{
-            margin : 0;
-            padding: 0;
+        ul{
+            list-style: none;
         }
-        
-        body{
-            background : url(1.jpg) , rgb(65, 4, 4);
-            background-blend-mode: multiply;
-            background-size: contain;
-            background-attachment: fixed;
-           /*background-attachment: scroll;*/
+        li{
+            display: inline;
         }
-        .img1{  
-            margin: 5px 5px 5px 100px;
-            padding: 5px 5px 5px 300px;
-            height: 300px;
-            width: 300px;
-            background-origin: padding-box;
-            overflow: hidden; 
+        nav{
+            background-color:grey;
+            height: 5vh;
+            
         }
-        .img2{
-            margin: 5px;
-            padding: 2px;
-            height: 300px;
-            width: 300px;
-            overflow: scroll;
-            background-origin: content-box;
-        }
-        .img3{
-            margin: 5px;
-            padding: 2px;
-            height: 300px;
-            width: 300px;
-            overflow: hidden;
-            background-origin: border-box;
-        }
-        .img4{
-            margin: 5px;
-            padding: 2px;
-            height: 300px;
-            width: 300px;
-            overflow: hidden;
-            background-origin: border-box;
-        }
-        .img5{
-            margin: 5px;
-            height: 300px;
-            width: 300px;
-            overflow: hidden;
-            background-origin: border-box;
+        .profilelogo{
+            height: 33px;
+            width: 33px;
+            background-image: url(profile.jpg);
+            background-size: cover;
+            top: 16px;
+            left: 13px;
+            position: absolute;
         }
     </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><div class="profilelogo"></div></li>
+                <li>Vishal kumar </li>
+                <li><a href="www.leetcode.com">Leetcode</a></li>
+                <li><a href="www.codestudio.com">Codestudio</a></li>
+                <li><a href="www.linkedin.com">Linkedin</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="main">
-        <div class="img1">
-            <img src="1.jpg" alt="nature" height="400px" width="400px">
-        </div>
-        <div class="img2">
-            <img src="2.jpg" alt="nature" height="400px" width="400px">
-        </div>
-        <div class="img3">
-            <img src="3.jpg" alt="nature" height="400px" width="400px">
-        </div>
-        <div class="img4">
-            <img src="4.jpg" alt="nature" height="400px" width="400px">
-        </div>
-        <div class="img5">
-            <img src="5.jpg" alt="nature" height="400px" width="400px">
-        </div>
-    </div>
-    
+        
+    </div>    
 </body>
 </html>
